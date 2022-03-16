@@ -1,0 +1,93 @@
+body{
+    background-color: antiquewhite ;
+    min-width: auto;
+}
+img{
+    border:1px solid;
+    border-radius: 20px;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    justify-content: space-around;
+    align-items: center;
+}
+/*Media Querie para celular*/
+@media (min-width: 320px) and (max-width:768px){
+    body{
+        background-color: red;
+        color: #000;
+    }
+    .container{
+        width: 100%
+    }
+    p{
+        text-align: center;
+    }
+    img{
+        width:80%;
+        margin: 20px auto;
+        border-radius: 15px;
+    }
+    .container{
+        flex-direction: column;
+    }
+   
+}
+/*Media Querie para celular*/
+@media (min-width: 320px) 
+and (max-width:1080px)
+and (orientation: landscape ){
+    body{
+        background-color: red;
+        color: #000;
+    }
+    .container{
+        width: 100%
+    }
+    p{
+        text-align: center;
+    }
+    img{
+        width:80%;
+        margin: 20px auto;
+        border-radius: 15px;
+    }
+    .container{
+        flex-direction: column;
+    }
+   
+}
+
+/*Media Querie para tablet*/
+@media (min-width: 768px) 
+and (max-width:1024px)
+and (orientation: portrait){ /*landscape es horizontal y portrait es vertical*/
+    body{
+        background-color:black;
+        color:white;
+    }
+    
+    img {
+        width: 100%;
+        border: 2px solid #fff;
+    }
+    /*Media Querie para laptops y pantallas hd*/
+@media (min-width: 1280px) and (max-width:1920px){
+    body{
+        background-color:black;
+        color:white;
+    }
+}
+/*Media Querie para pantallas muy grandes*/
+@media (min-width:1921px){
+    #content{
+        max-width:1920px;
+        margin:auto 0;
+    }
+}
+
+
+
+}
